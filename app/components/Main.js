@@ -7,7 +7,7 @@ var Main = React.createClass({
   render: function () {
     return (
       <div>
-				<Nav />
+        <Nav location={this.props.location.pathname} />
         {this.props.children}
         <Footer />
 			</div>

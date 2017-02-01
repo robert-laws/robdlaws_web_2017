@@ -4,7 +4,11 @@
   "description": "robdlaws website",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --open --inline --progress --colors --watch --hot"
+    "start": "./node_modules/.bin/webpack-dev-server --open --inline --progress --colors --watch --hot --history-api-fallback"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-laws/robdlaws_web_2017"
   },
   "author": "Robert Laws",
   "license": "MIT",
