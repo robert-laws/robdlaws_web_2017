@@ -66,7 +66,7 @@ var webpack = require("webpack");
 module.exports = {
 	entry: "./app/app.js",
 	output: {
-		path: "public",
+		path: "public/assets",
 		filename: "bundle.js",
 		publicPath: "public"
 	},

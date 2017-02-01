@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var { Route, Router, IndexRoute, browserHistory } = require('react-router');
+var { Route, Router, IndexRoute, hashHistory } = require('react-router');
 
 var Main = require('Main');
 var Home = require('Home');
@@ -8,7 +8,7 @@ var FrontEnd = require('FrontEnd');
 var About = require('About');
 
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={Home} />
       <Route path="front-end-development" component={FrontEnd} />
