@@ -31,35 +31,36 @@ var WebMenu = React.createClass({
                                 <Link className="item" to="/back-end-development"><Icon name="database" /> Back-End Development</Link>
                                 <div className="divider"></div>
                                 <div className="header">Design</div>
-                                <Link className="item" to="/"><Icon name="paint brush" /> Adobe Design</Link>
+                                <Link className="item" to="/design"><Icon name="paint brush" /> Adobe Design</Link>
+                                <Link className="item" to="/data-visualization"><Icon name="unhide" /> Data Visualization</Link>
                             </div>
                         </div>
                         <div className="ui simple dropdown item">
                             Web Tech
                             <i className="dropdown icon"></i>
                             <div className="menu">
-                                <Link className="item" to="/"><Icon name="cube" /> Podcasts</Link>
-                                <Link className="item" to="/"><Icon name="tv" /> Websites</Link>
-                                <Link className="item" to="/"><Icon name="user" /> Learning</Link>
+                                <Link className="item" to="/podcasts"><Icon name="cube" /> Podcasts</Link>
+                                <Link className="item" to="/websites"><Icon name="tv" /> Websites</Link>
+                                <Link className="item" to="/learning"><Icon name="user" /> Learning</Link>
                             </div>
                         </div>
                         <div className="ui simple dropdown item">
                             Photography
                             <i className="dropdown icon"></i>
                             <div className="menu">
-                                <Link className="item" to="/"><Icon name="plane" /> Travel Photos</Link>
-                                <Link className="item" to="/"><Icon name="photo" /> Fun Photos</Link>
+                                <Link className="item" to="/travel-photos"><Icon name="plane" /> Travel Photos</Link>
+                                <Link className="item" to="/fun-photos"><Icon name="photo" /> Fun Photos</Link>
                             </div>
                         </div>
                         <div className="ui simple dropdown item">About Me
                             <i className="dropdown icon"></i>
                             <div className="menu">
                                 <Link className="item" to="/about"><Icon name="user" /> About Me</Link>
-                                <Link className="item" to="/"><Icon name="file text outline" /> Resume</Link>
-                                <Link className="item" to="/"><Icon name="computer" /> Social Networking</Link>
+                                <Link className="item" to="/resume"><Icon name="file text outline" /> Resume</Link>
+                                <Link className="item" to="/social-networking"><Icon name="computer" /> Social Networking</Link>
                                 <div className="divider"></div>
                                 <div className="header">Relaxation</div>
-                                <Link className="item" to="/"><Icon name="paw" /> Four-footed Friends</Link>
+                                <Link className="item" to="/four-footed-friends"><Icon name="paw" /> Four-Footed Friends</Link>
                             </div>
                         </div>
                     </div>
