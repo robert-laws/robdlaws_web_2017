@@ -2,10 +2,21 @@ var React = require('react');
 var { Link, IndexLink } = require('react-router');
 var { Icon } = require('semantic-ui-react');
 
-var Nav = React.createClass({
+var WebMenu = React.createClass({
+    getDefaultProps() {
+        return {
+            img: ['IMG_0540', 'IMG_2359', 'IMG_4845', 'IMG_4896', 'IMG_4925', 'IMG_5845'],
+            rand: Math.floor(Math.random() * 6)
+        }
+    },
+    getInitialState() {
+        return {
+            bgIMG: 'url(/images/' + this.props.img[parseInt(this.props.rand)] + '.jpg) !important'
+        }
+    },
     render() {
         return (
-            <div className={(this.props.location == "/") ? "ui inverted vertical masthead center aligned segment" : "ui inverted vertical center aligned segment"}>
+            <div className={(this.props.location == "/") ? "ui inverted vertical masthead center aligned segment" : "ui inverted vertical center aligned segment"} style={{backgroundImage: this.state.bgIMG, backgroundSize: 'cover !important'}}>
                 <div className="ui fixed stackable inverted menu">
                     <div className="ui container">
                         <IndexLink className="item" to="/">
@@ -53,10 +64,10 @@ var Nav = React.createClass({
                         </div>
                     </div>
                 </div>
-                {(this.props.location == "/") ? <div id="homeIdentity" className="ui text container"><h1 className="ui inverted header">Robert Laws</h1><h2><em>Covering the Personal and Professional</em></h2></div> : null}              
+                {(this.props.location == "/") ? <div id="homeIdentity" className="ui text container"><h1 className="ui inverted header">Robert Laws</h1><h2><em>Covering the Personal and Professional</em></h2></div> : null}
             </div>
         )
     }
 });
 
-module.exports = Nav;
+module.exports = WebMenu;

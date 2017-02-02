@@ -16,7 +16,7 @@ var Home = React.createClass({
                                 <Message size="large" icon color="olive">
                                     <Icon name="world" />
                                     <Message.Content>
-                                        <Message.Header>Global Experience</Message.Header>
+                                        <Message.Header>Global Focus</Message.Header>
                                         <p className="smallerText">-- Living and working overseas for 8+ years has prepared me for out of the ordinary challenges.</p>
                                     </Message.Content>										
                                 </Message>

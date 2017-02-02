@@ -328,6 +328,10 @@ div.margin.bottom {
     font-weight: normal;
 }
 
+.masthead {
+
+}
+
 .ui.vertical.stripe {
     padding: 8em 0em;
 }
@@ -382,6 +386,10 @@ div.margin.bottom {
     #homeIdentity {
         padding-top: 16em;
         background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    .masthead h1.ui.header {
+        margin-top: 2px;
     }
 }
 

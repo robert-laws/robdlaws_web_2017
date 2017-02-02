@@ -4,7 +4,7 @@
   "description": "robdlaws website",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --open --inline --progress --colors --watch --hot --history-api-fallback"
+    "start": "./node_modules/.bin/webpack-dev-server --open"
   },
   "repository": {
     "type": "git",

@@ -1,14 +1,14 @@
 var React = require('react');
 var { Container } = require('semantic-ui-react');
 
-var About = React.createClass({
+var Page404 = React.createClass({
     render() {
         return (
             <Container id="topDiv">
-                <h1>About Me and this Website.</h1>
+                <h1>404 Error - Page Not Found</h1>
             </Container>
         )
     }
 });
 
-module.exports = About;
+module.exports = Page404;
