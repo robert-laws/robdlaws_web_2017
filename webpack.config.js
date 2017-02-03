@@ -30,6 +30,7 @@ module.exports = {
        About: 'app/components/About.js',
        Resume: 'app/components/Resume.js',
        SocialNetworking: 'app/components/SocialNetworking.js',
+       Blog: 'app/components/Blog.js',
        FourFootedFriends: 'app/components/FourFootedFriends.js',
        Page404: 'app/components/Page404.js'
      }

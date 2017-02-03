@@ -37,6 +37,7 @@ ReactDOM.render(
             <Route path="about" component={About} />
             <Route path="resume" component={Resume} />
             <Route path="social-networking" component={SocialNetworking} />
+            <Route path="blog" component={Blog} />
             <Route path="four-footed-friends" component={FourFootedFriends} />
             <Route path="*" component={Page404} />
         </Route>
