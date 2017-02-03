@@ -17,6 +17,7 @@ var FunPhotos = require('FunPhotos');
 var About = require('About');
 var Resume = require('Resume');
 var SocialNetworking = require('SocialNetworking');
+var Blog = require('Blog');
 var FourFootedFriends = require('FourFootedFriends');
 var Page404 = require('Page404');
 
