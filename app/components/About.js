@@ -1,3 +1,5 @@
+// presentational
+
 var React = require('react');
 var { Container, Segment } = require('semantic-ui-react');
 

@@ -1,3 +1,5 @@
+// interactive
+
 var React = require('react');
 var { Container } = require('semantic-ui-react');
 
