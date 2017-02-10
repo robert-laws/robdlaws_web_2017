@@ -40,8 +40,13 @@ var SimpleInterest = React.createClass({
   },
   doSITest: function(data) {
     var fd = data.formData;
-    if(fd.simpleInterest) {
-      // todo
+    if(fd.simpleInterest && fd.interestRate && fd.term && fd.frequency) {
+      var freqVal = this.doFreqVal(fd.term, fd.frequency);
+      var res = fd.simpleInterest / (fd.interestRate * freqVal);
+      this.setState({SI: fd.simpleInterest});
+      this.setState({PR: res.toFixed(2)});
+      var totalInterest = this.doTICaluculation(fd.simpleInterest, res);
+      this.setState({TI: totalInterest});
     } else {
       debugger;
       if(fd.principal && fd.interestRate && fd.term && fd.frequency) {
