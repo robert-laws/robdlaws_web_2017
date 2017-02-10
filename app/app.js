@@ -28,6 +28,7 @@ var CompoundingFrequencies = require('CompoundingFrequencies');
 var SolveRateTime = require('SolveRateTime');
 var RuleOf72 = require('RuleOf72');
 var EffectiveRate = require('EffectiveRate');
+var SimpleInterest = require('SimpleInterest');
 
 ReactDOM.render(
 <Router history={hashHistory}>
@@ -53,8 +54,9 @@ ReactDOM.render(
       <Route path="compounding-frequencies" component={CompoundingFrequencies} />
       <Route path="solve-rate-time" component={SolveRateTime} />
       <Route path="rule-of-72" component={RuleOf72} />
-    <Route path="effective-rate" component={EffectiveRate} />
+      <Route path="effective-rate" component={EffectiveRate} />
       <Route path="find-percentage" component={FindPercentage} />
+      <Route path="simple-interest" component={SimpleInterest} />
     </Route>
 
     <Route path="*" component={Page404} />

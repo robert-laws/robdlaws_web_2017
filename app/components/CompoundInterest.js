@@ -72,15 +72,15 @@ var CompoundInterest = React.createClass({
   render() {
     return (
         <Container id="topDiv">
-          <Segment>
+          <Segment color="teal">
             <Header as="h2">Compound Interest</Header>
             <Divider />
             <Form id="CIForm" onSubmit={this.onFormSubmit}>
               <Form.Group widths="equal">
-                <Form.Input label="Future Value" name="futureValue" placeholder="value" /> =
-                <Form.Input label="Present Value" name="presentValue" placeholder="value" />
-                <Form.Input label="( 1 + Interest Rate )" name="interestRate" placeholder="rate" />
-                <Form.Input label="to the power of Term" name="term" placeholder="term" />
+                <Form.Input label="Future Value" name="futureValue" placeholder="ex. 9500.50" /> =
+                <Form.Input label="Present Value" name="presentValue" placeholder="ex. 5000" />
+                <Form.Input label="( 1 + Interest Rate )" name="interestRate" placeholder="ex. 0.075" />
+                <Form.Input label="to the power of Term" name="term" placeholder="ex. 12" />
               </Form.Group>
               <Button primary type="submit" size="big">Submit</Button>
               <Button secondary onClick={this.onClearValues} size="big">Clear Values</Button>

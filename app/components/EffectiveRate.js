@@ -94,12 +94,12 @@ var EffectiveRate = React.createClass({
   render() {
     return (
         <Container id="topDiv">
-          <Segment>
+          <Segment color="teal">
             <Header as="h2">Effective Rate</Header>
             <Divider />
             <Form id="SRTForm" onSubmit={this.onFormSubmit}>
               <Form.Group widths="equal">
-                <Form.Input label="Interest Rate" name="interestRate" placeholder="rate" />
+                <Form.Input label="Interest Rate" name="interestRate" placeholder="ex. 0.075" />
                 <Form.Select label='Frequency' name='frequency' options={frequencies} placeholder='Frequency' />
               </Form.Group>
               <Button primary type="submit" size="big">Submit</Button>

@@ -7,16 +7,27 @@ var CompoundingFrequencies = require('CompoundingFrequencies');
 var SolveRateTime = require('SolveRateTime');
 var RuleOf72 = require('RuleOf72');
 var EffectiveRate = require('EffectiveRate');
+var SimpleInterest = require('SimpleInterest');
 
 var Chapter3 = React.createClass({
   render() {
     return (
         <div>
+          <Container id="onlyTopDiv">
+            <Header as="h1">Chapter 1</Header>
+          </Container>
+          <SimpleInterest />
+          <Container id="onlyTopDiv">
+            <Header as="h1">Chapter 3</Header>
+          </Container>
           <CompoundInterest />
           <CompoundingFrequencies />
           <SolveRateTime />
-          <RuleOf72 />
           <EffectiveRate />
+          <RuleOf72 />
+          <Container id="onlyTopDiv">
+            <Header as="h1">Utilities</Header>
+          </Container>
           <FindPercentage />
         </div>
       )

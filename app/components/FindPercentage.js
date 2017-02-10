@@ -46,14 +46,14 @@ var FindPercentage = React.createClass({
   render() {
     return (
         <Container id="topDiv">
-          <Segment>
+          <Segment color="red">
             <Header as="h2">Percentage as a Decimal</Header>
             <Divider />
             <Form id="PasDForm" onSubmit={this.onFormSubmit}>
               <Form.Group widths="equal">
-                <Form.Input label="First Number" name="firstNumber" placeholder="number" />
-                <Form.Input label="Second Number" name="secondNumber" placeholder="number" />
-                <Form.Input label="Third Number" name="thirdNumber" placeholder="number" />
+                <Form.Input label="First Number" name="firstNumber" placeholder="ex. 5" />
+                <Form.Input label="Second Number" name="secondNumber" placeholder="ex. 4" />
+                <Form.Input label="Third Number" name="thirdNumber" placeholder="ex. 7" />
               </Form.Group>
               <Button primary type="submit" size="big">Submit</Button>
               <Button secondary onClick={this.onClearValues} size="big">Clear Values</Button>

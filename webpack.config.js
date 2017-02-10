@@ -6,6 +6,7 @@ module.exports = {
 		path: "public",
 		filename: "bundle.js"
 	},
+	devtool: 'cheap-module-eval-source-map',
 	devServer: {
 		inline: true,
 		contentBase: './public',
@@ -39,7 +40,8 @@ module.exports = {
 			 CompoundingFrequencies: 'app/components/CompoundingFrequencies.js',
 			 SolveRateTime: 'app/components/SolveRateTime.js',
 			 RuleOf72: 'app/components/RuleOf72.js',
-			 EffectiveRate: 'app/components/EffectiveRate.js'
+			 EffectiveRate: 'app/components/EffectiveRate.js',
+			 SimpleInterest: 'app/components/SimpleInterest.js'
      }
    },
 	module: {
