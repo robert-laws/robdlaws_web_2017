@@ -1,16 +1,16 @@
-// presentational
+// interactive
 
 var React = require('react');
 var { Container } = require('semantic-ui-react');
 
-var SocialNetworking = React.createClass({
+var Blog = React.createClass({
     render() {
         return (
             <Container id="topDiv">
-                <h1>Social Networking</h1>
+                <h1>Blog</h1>
             </Container>
         )
     }
 });
 
-module.exports = SocialNetworking;
+module.exports = Blog;

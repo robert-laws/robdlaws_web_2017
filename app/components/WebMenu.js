@@ -58,6 +58,7 @@ var WebMenu = React.createClass({
                                 <Link className="item" to="/about"><Icon name="user" /> About Me</Link>
                                 <Link className="item" to="/resume"><Icon name="file text outline" /> Resume</Link>
                                 <Link className="item" to="/social-networking"><Icon name="computer" /> Social Networking</Link>
+                                <Link className="item" to="/blog"><Icon name="comment" /> Blog</Link>
                                 <div className="divider"></div>
                                 <div className="header">Relaxation</div>
                                 <Link className="item" to="/four-footed-friends"><Icon name="paw" /> Four-Footed Friends</Link>
