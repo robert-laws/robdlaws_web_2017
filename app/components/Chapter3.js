@@ -8,6 +8,10 @@ var SolveRateTime = require('SolveRateTime');
 var RuleOf72 = require('RuleOf72');
 var EffectiveRate = require('EffectiveRate');
 var SimpleInterest = require('SimpleInterest');
+var SimpleDiscount = require('SimpleDiscount');
+var SimpleDiscountFormula = require('SimpleDiscountFormula');
+var ArithmeticSequences = require('ArithmeticSequences');
+var GeometricSequences = require('GeometricSequences');
 
 var Chapter3 = React.createClass({
   render() {
@@ -17,6 +21,11 @@ var Chapter3 = React.createClass({
             <Header as="h1">Chapter 1</Header>
           </Container>
           <SimpleInterest />
+            <Container id="onlyTopDiv">
+              <Header as="h1">Chapter 2</Header>
+            </Container>
+            <SimpleDiscount />
+            <SimpleDiscountFormula />
           <Container id="onlyTopDiv">
             <Header as="h1">Chapter 3</Header>
           </Container>
@@ -25,6 +34,11 @@ var Chapter3 = React.createClass({
           <SolveRateTime />
           <EffectiveRate />
           <RuleOf72 />
+          <Container id="onlyTopDiv">
+            <Header as="h1">Sequences</Header>
+          </Container>
+          <ArithmeticSequences />
+          <GeometricSequences />
           <Container id="onlyTopDiv">
             <Header as="h1">Utilities</Header>
           </Container>

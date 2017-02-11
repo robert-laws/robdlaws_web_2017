@@ -41,7 +41,11 @@ module.exports = {
 			 SolveRateTime: 'app/components/SolveRateTime.js',
 			 RuleOf72: 'app/components/RuleOf72.js',
 			 EffectiveRate: 'app/components/EffectiveRate.js',
-			 SimpleInterest: 'app/components/SimpleInterest.js'
+			 SimpleInterest: 'app/components/SimpleInterest.js',
+			 SimpleDiscount: 'app/components/SimpleDiscount.js',
+			 SimpleDiscountFormula: 'app/components/SimpleDiscountFormula.js',
+			 ArithmeticSequences: 'app/components/ArithmeticSequence.js',
+			 GeometricSequences: 'app/components/GeometricSequence.js'
      }
    },
 	module: {
@@ -70,13 +74,13 @@ module.exports = {
 		]
 	},
 	plugins: [
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false,
-        //     },
-        //     output: {
-        //         comments: false,
-        //     }
-        // })
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+            },
+            output: {
+                comments: false,
+            }
+        })
     ]
 }
