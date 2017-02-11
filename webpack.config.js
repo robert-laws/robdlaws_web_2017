@@ -1,3 +1,7 @@
+// Check if npm config production value is set to true. If this value is true, it will skip over the dev dependencies.
+// Run npm config get production
+// To set it: npm config set -g production false
+
 var webpack = require("webpack");
 
 module.exports = {
@@ -6,7 +10,7 @@ module.exports = {
 		path: "public",
 		filename: "bundle.js"
 	},
-	devtool: 'cheap-module-eval-source-map',
+	// devtool: 'cheap-module-eval-source-map', // makes bundles.js file very large in production
 	devServer: {
 		inline: true,
 		contentBase: './public',
@@ -74,13 +78,14 @@ module.exports = {
 		]
 	},
 	plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-            },
-            output: {
-                comments: false,
-            }
-        })
+				// new webpack.optimize.DedupePlugin(),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false,
+        //     },
+        //     output: {
+        //         comments: false,
+        //     }
+        // })
     ]
 }
