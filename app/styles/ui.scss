@@ -297,7 +297,7 @@ div#onlyTopDiv {
 }
 
 div#topDiv {
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -396,6 +396,11 @@ div.margin.bottom {
 
     .masthead h1.ui.header {
         margin-top: 2px;
+    }
+
+    div#topDiv {
+        margin-top: 200px;
+        margin-bottom: 50px;
     }
 }
 
