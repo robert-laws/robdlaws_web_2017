@@ -20,19 +20,15 @@ var About = (props) => {
         <Image src='/images/reactjs.png' size='small' />
       </Segment>
       <p>I'm excited for the future in web development. Technology advancements press forward and will impact the world of web development for the foreseeable future. Data network speeds continue to increase, allowing for fully streamable media content without the need to download presistent copies. Highly reactive websites improve the user experience and give web developers access to tools that can unleash their creativity and ambitions.</p>
-      <p>That brings me to the present moment. I continue to explore the latest technologies and have lead classes or workshops on modern web development processes using task and package managers. Currently, I'm working with the latest technologies - Webpack, React, AngularJS 2, and ASP.NET Core MVC...</p>
-      <Divider />
-      <Header sub>Sub-header - content</Header>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>That brings me to the present moment. I continue to explore the latest technologies and have lead classes or workshops on modern web development processes using task and package managers. Currently, I'm working with the latest technologies - Webpack, React, AngularJS 2, and ASP.NET Core MVC.</p>
       <Segment inverted secondary color="teal" size="big">
-        <Icon name="privacy" size="big" /> Message content is compact here, inserted between paragraphs
+        <Icon name="privacy" size="big" /> Embrace technology to remain relevant in the 21st Century
       </Segment>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <List>
-        <List.Item>Item # 1</List.Item>
-        <List.Item>Item # 2</List.Item>
-        <List.Item>Item # 3</List.Item>
-      </List>
+      <p>Although I've worked in libraries for most of my career, my future path is with full-on web development. As the world changes, I believe it will be essential to have high-level technical skills to keep up. For institutions and professions that aren't willing to embrace the changes, they will find it harder to make themselves relevant in the 21st century.</p>
+      <Divider />
+      <Header sub>Interests Outside of Web Development</Header>
+      <p>Most of my waking hours are spent at a computer screen working with web technologies. However, during the hours when I'm not staring at a screen I'm either enjoying a run outside, traveling, taking photos, or spending time with my two dogs - Snowflake and Flurry.</p>
+      <p>I've been fortunate to have traveled widely throughout Europe. I particularly enjoyed visiting Germany, which has all the charms of the Old World, yet is a very modern and technologically advanced country. Many of my best photographs have been taken during my time visiting Germany.</p>
     </Container>
   )
 }
