@@ -20,19 +20,6 @@ var SocialNetworking = require('SocialNetworking');
 var Blog = require('Blog');
 var FourFootedFriends = require('FourFootedFriends');
 var Page404 = require('Page404');
-// extra
-var Chapter3 = require('Chapter3');
-var FindPercentage = require('FindPercentage');
-var CompoundInterest = require('CompoundInterest');
-var CompoundingFrequencies = require('CompoundingFrequencies');
-var SolveRateTime = require('SolveRateTime');
-var RuleOf72 = require('RuleOf72');
-var EffectiveRate = require('EffectiveRate');
-var SimpleInterest = require('SimpleInterest');
-var SimpleDiscount = require('SimpleDiscount');
-var SimpleDiscountFormula = require('SimpleDiscountFormula');
-var ArithmeticSequences = require('ArithmeticSequences');
-var GeometricSequences = require('ArithmeticSequences');
 
 ReactDOM.render(
 <Router history={hashHistory}>
@@ -53,20 +40,6 @@ ReactDOM.render(
     <Route path="social-networking" component={SocialNetworking} />
     <Route path="blog" component={Blog} />
     <Route path="four-footed-friends" component={FourFootedFriends} />
-    <Route path="chapter3" component={Chapter3}>
-      <Route path="compound-interest" component={CompoundInterest} />
-      <Route path="compounding-frequencies" component={CompoundingFrequencies} />
-      <Route path="solve-rate-time" component={SolveRateTime} />
-      <Route path="rule-of-72" component={RuleOf72} />
-      <Route path="effective-rate" component={EffectiveRate} />
-      <Route path="find-percentage" component={FindPercentage} />
-      <Route path="simple-interest" component={SimpleInterest} />
-      <Route path="simple-discount" component={SimpleDiscount} />
-      <Route path="simple-discount-formula" component={SimpleDiscountFormula} />
-      <Route path="arithmetic-sequences" component={ArithmeticSequences} />
-      <Route path="geometric-sequences" component={GeometricSequences} />
-    </Route>
-
     <Route path="*" component={Page404} />
   </Route>
 </Router>,

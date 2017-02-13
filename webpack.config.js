@@ -37,19 +37,7 @@ module.exports = {
        SocialNetworking: 'app/components/SocialNetworking.js',
        Blog: 'app/components/Blog.js',
        FourFootedFriends: 'app/components/FourFootedFriends.js',
-       Page404: 'app/components/Page404.js',
-			 Chapter3: 'app/components/Chapter3.js',
-			 FindPercentage: 'app/components/FindPercentage.js',
-			 CompoundInterest: 'app/components/CompoundInterest.js',
-			 CompoundingFrequencies: 'app/components/CompoundingFrequencies.js',
-			 SolveRateTime: 'app/components/SolveRateTime.js',
-			 RuleOf72: 'app/components/RuleOf72.js',
-			 EffectiveRate: 'app/components/EffectiveRate.js',
-			 SimpleInterest: 'app/components/SimpleInterest.js',
-			 SimpleDiscount: 'app/components/SimpleDiscount.js',
-			 SimpleDiscountFormula: 'app/components/SimpleDiscountFormula.js',
-			 ArithmeticSequences: 'app/components/ArithmeticSequence.js',
-			 GeometricSequences: 'app/components/GeometricSequence.js'
+       Page404: 'app/components/Page404.js'
      }
    },
 	module: {
@@ -78,14 +66,14 @@ module.exports = {
 		]
 	},
 	plugins: [
-				// new webpack.optimize.DedupePlugin(),
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false,
-        //     },
-        //     output: {
-        //         comments: false,
-        //     }
-        // })
+				new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+            },
+            output: {
+                comments: false,
+            }
+        })
     ]
 }
