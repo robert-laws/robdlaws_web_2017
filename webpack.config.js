@@ -25,6 +25,8 @@ module.exports = {
        Footer: 'app/components/Footer.js',
        FrontEnd: 'app/components/FrontEnd.js',
        BackEnd: 'app/components/BackEnd.js',
+       ContentManagement: 'app/components/ContentManagement.js',
+       Development: 'app/components/Development.js',
        Design: 'app/components/Design.js',
        DataVisualization: 'app/components/DataVisualization.js',
        Podcasts: 'app/components/Podcasts.js',

@@ -7,6 +7,8 @@ var Home = require('Home');
 var FrontEnd = require('FrontEnd');
 var BackEnd = require('BackEnd');
 var BackEnd = require('BackEnd');
+var ContentManagement = require('ContentManagement');
+var Development = require('Development');
 var Design = require('Design');
 var DataVisualization = require('DataVisualization');
 var Podcasts = require('Podcasts');
@@ -25,9 +27,11 @@ ReactDOM.render(
 <Router history={hashHistory}>
   <Route path="/" component={Main}>
     <IndexRoute component={Home} />
-    <Route path="front-end-development" component={FrontEnd} />
-    <Route path="front-end-development" component={FrontEnd} />
-    <Route path="back-end-development" component={BackEnd} />
+    <Route path="development" component={Development}>
+      <Route path="front-end-development" component={FrontEnd} />
+      <Route path="back-end-development" component={BackEnd} />
+      <Route path="content-management" component={ContentManagement} />
+    </Route>
     <Route path="design" component={Design} />
     <Route path="data-visualization" component={DataVisualization} />
     <Route path="podcasts" component={Podcasts} />

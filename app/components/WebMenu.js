@@ -26,9 +26,8 @@ var WebMenu = React.createClass({
                             Portfolio
                             <i className="dropdown icon"></i>
                             <div className="menu">
-                                <div className="header">Web Development</div>
-                                <Link className="item" to="/front-end-development"><Icon name="code" /> Front-End Development</Link>
-                                <Link className="item" to="/back-end-development"><Icon name="database" /> Back-End Development</Link>
+                                <div className="header">Development</div>
+                                <Link className="item" to="/development"><Icon name="code" /> Web Development</Link>
                                 <div className="divider"></div>
                                 <div className="header">Design</div>
                                 <Link className="item" to="/design"><Icon name="paint brush" /> Adobe Design</Link>
