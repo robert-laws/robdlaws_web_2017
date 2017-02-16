@@ -10,7 +10,11 @@ var BackEnd = require('BackEnd');
 var ContentManagement = require('ContentManagement');
 var Development = require('Development');
 var Design = require('Design');
+var Prototypes = require('Prototypes');
+var WebGraphics = require('WebGraphics');
+var DigitalPublications = require('DigitalPublications');
 var DataVisualization = require('DataVisualization');
+var WebTech = require('WebTech');
 var Podcasts = require('Podcasts');
 var Websites = require('Websites');
 var Learning = require('Learning');
@@ -32,11 +36,17 @@ ReactDOM.render(
       <Route path="back-end-development" component={BackEnd} />
       <Route path="content-management" component={ContentManagement} />
     </Route>
-    <Route path="design" component={Design} />
+    <Route path="design" component={Design}>
+      <Route path="prototypes" component={Prototypes} />
+      <Route path="web-graphics" component={WebGraphics} />
+      <Route path="digital-publications" component={DigitalPublications} />
+    </Route>
     <Route path="data-visualization" component={DataVisualization} />
-    <Route path="podcasts" component={Podcasts} />
-    <Route path="websites" component={Websites} />
-    <Route path="learning" component={Learning} />
+    <Route path="web-tech" component={WebTech}>
+      <Route path="podcasts" component={Podcasts} />
+      <Route path="websites" component={Websites} />
+      <Route path="learning" component={Learning} />
+    </Route>
     <Route path="travel-photos" component={TravelPhotos} />
     <Route path="fun-photos" component={FunPhotos} />
     <Route path="about" component={About} />

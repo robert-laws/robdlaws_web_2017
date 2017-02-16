@@ -1,13 +1,13 @@
 // presentational
 
 var React = require('react');
-var { Container } = require('semantic-ui-react');
+var { Container, Header } = require('semantic-ui-react');
 
 var SocialNetworking = React.createClass({
     render() {
         return (
             <Container id="topDiv">
-                <h1>Social Networking</h1>
+                <Header as="h1">Social Networking</Header>
             </Container>
         )
     }

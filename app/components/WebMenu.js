@@ -38,9 +38,7 @@ var WebMenu = React.createClass({
                             Web Tech
                             <i className="dropdown icon"></i>
                             <div className="menu">
-                                <Link className="item" to="/podcasts"><Icon name="cube" /> Podcasts</Link>
-                                <Link className="item" to="/websites"><Icon name="tv" /> Websites</Link>
-                                <Link className="item" to="/learning"><Icon name="user" /> Learning</Link>
+                                <Link className="item" to="/web-tech"><Icon name="cubes" /> Web Tech</Link>                                
                             </div>
                         </div>
                         <div className="ui simple dropdown item">

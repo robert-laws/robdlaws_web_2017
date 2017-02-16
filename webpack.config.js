@@ -28,7 +28,11 @@ module.exports = {
        ContentManagement: 'app/components/ContentManagement.js',
        Development: 'app/components/Development.js',
        Design: 'app/components/Design.js',
+       Prototypes: 'app/components/Prototypes.js',
+       WebGraphics: 'app/components/WebGraphics.js',
+       DigitalPublications: 'app/components/DigitalPublications.js',
        DataVisualization: 'app/components/DataVisualization.js',
+       WebTech: 'app/components/WebTech.js',
        Podcasts: 'app/components/Podcasts.js',
        Websites: 'app/components/Websites.js',
        Learning: 'app/components/Learning.js',
@@ -68,14 +72,14 @@ module.exports = {
 		]
 	},
 	plugins: [
-				// new webpack.optimize.DedupePlugin(),
-        // new webpack.optimize.UglifyJsPlugin({
-        //     compress: {
-        //         warnings: false,
-        //     },
-        //     output: {
-        //         comments: false,
-        //     }
-        // })
+				new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+            },
+            output: {
+                comments: false,
+            }
+        })
     ]
 }
