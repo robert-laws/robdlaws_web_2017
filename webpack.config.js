@@ -3,6 +3,7 @@
 // To set it: npm config set -g production false
 
 var webpack = require("webpack");
+var CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
 	entry: "./app/app.js",
@@ -84,14 +85,29 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery"
     }),
-		new webpack.optimize.DedupePlugin(),
+		new webpack.optimize.AggressiveMergingPlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
+      mangle: true,
       compress: {
-          warnings: false,
+        warnings: false, // Suppress uglification warnings
+        pure_getters: true,
+        unsafe: true,
+        unsafe_comps: true,
+        screw_ie8: true
       },
       output: {
-          comments: false,
-      }
+        comments: false,
+      },
+      exclude: [/\.min\.js$/gi] // skip pre-minified libs
+    }),
+    new CompressionPlugin({
+      asset: "[path].gz[query]",
+      algorithm: "gzip",
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0
     })
   ]
 }
