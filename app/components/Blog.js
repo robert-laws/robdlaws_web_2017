@@ -1,15 +1,19 @@
 // interactive
 
 var React = require('react');
-var { Container, Header } = require('semantic-ui-react');
+var { Container, Header, Divider } = require('semantic-ui-react');
+var ModalButton = require('ModalButton');
 
 var Blog = React.createClass({
-    render() {
-        return (
-            <Container id="topDiv">
-                <Header as="h1">Blog</Header>
-            </Container>
-        )
+    render: function() {
+      var imgSrc = "IMG_1783.jpg";
+      return (
+          <Container id="topDiv">
+            <Header as="h1">Blog</Header>
+            <ModalButton imageSource={imgSrc} />
+            <Divider />
+          </Container>
+      )
     }
 });
 

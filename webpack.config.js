@@ -16,36 +16,14 @@ module.exports = {
 		contentBase: './public',
 		port: 3000
 	},
-    resolve: {
-     root: __dirname,
-     alias: {
-       Main: 'app/components/Main.js',
-       WebMenu: 'app/components/WebMenu.js',
-       Home: 'app/components/Home.js',
-       Footer: 'app/components/Footer.js',
-       FrontEnd: 'app/components/FrontEnd.js',
-       BackEnd: 'app/components/BackEnd.js',
-       ContentManagement: 'app/components/ContentManagement.js',
-       Development: 'app/components/Development.js',
-       Design: 'app/components/Design.js',
-       Prototypes: 'app/components/Prototypes.js',
-       WebGraphics: 'app/components/WebGraphics.js',
-       DigitalPublications: 'app/components/DigitalPublications.js',
-       DataVisualization: 'app/components/DataVisualization.js',
-       WebTech: 'app/components/WebTech.js',
-       Podcasts: 'app/components/Podcasts.js',
-       Websites: 'app/components/Websites.js',
-       Learning: 'app/components/Learning.js',
-       TravelPhotos: 'app/components/TravelPhotos.js',
-       FunPhotos: 'app/components/FunPhotos.js',
-       About: 'app/components/About.js',
-       Resume: 'app/components/Resume.js',
-       SocialNetworking: 'app/components/SocialNetworking.js',
-       Blog: 'app/components/Blog.js',
-       FourFootedFriends: 'app/components/FourFootedFriends.js',
-       Page404: 'app/components/Page404.js'
-     }
-   },
+  resolve: {
+   root: __dirname,
+	 modulesDirectories: [
+		'node_modules',
+		'./app/components',
+		'./app/data'
+	 ]
+	},
 	module: {
 		loaders: [
 			{
@@ -68,18 +46,52 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+			},
+			{
+				test:/.woff$/,
+				loader:'url-loader',
+				query:{mimetype:'application/font-woff',name:'./semantic/dist/themes/default/assets/fonts/icons.woff'}
+			},
+			{
+				test:/.woff2$/,
+				loader:'url-loader',
+				query:{mimetype:'application/font-woff2',name:'./semantic/dist/themes/default/assets/fonts/icons.woff2'}
+			},
+			{
+				test:/.[ot]tf$/,
+				loader:'url-loader',
+				query:{mimetype:'application/octet-stream',name:'./semantic/dist/themes/default/assets/fonts/icons.ttf'}
+			},
+			{
+				test:/.eot$/,
+				loader:'url-loader',
+				query:{mimetype:'application/vnd.ms-fontobject',name:'./semantic/dist/themes/default/assets/fonts/icons.eot'}
+			},
+			{
+				test:/.svg$/,
+				loader:'url-loader',
+				query:{mimetype:'image/svg+xml',name:'./semantic/dist/themes/default/assets/fonts/icons.svg'}
+			},
+			{
+				test:/.png$/,
+				loader:'url-loader',
+				query:{mimetype:'image/png',name:'./semantic/dist/themes/default/assets/images/flags.png'}
 			}
 		]
 	},
 	plugins: [
-				new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-            },
-            output: {
-                comments: false,
-            }
-        })
-    ]
+		new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
+		new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+          warnings: false,
+      },
+      output: {
+          comments: false,
+      }
+    })
+  ]
 }

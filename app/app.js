@@ -1,6 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var { Route, Router, IndexRoute, hashHistory } = require('react-router');
+import './../semantic/dist/semantic.min.css';
+import './styles/ui.scss';
 
 var Main = require('Main');
 var Home = require('Home');
@@ -28,34 +30,34 @@ var FourFootedFriends = require('FourFootedFriends');
 var Page404 = require('Page404');
 
 ReactDOM.render(
-<Router history={hashHistory}>
-  <Route path="/" component={Main}>
-    <IndexRoute component={Home} />
-    <Route path="development" component={Development}>
-      <Route path="front-end-development" component={FrontEnd} />
-      <Route path="back-end-development" component={BackEnd} />
-      <Route path="content-management" component={ContentManagement} />
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+      <IndexRoute component={Home} />
+      <Route path="development" component={Development}>
+        <Route path="front-end-development" component={FrontEnd} />
+        <Route path="back-end-development" component={BackEnd} />
+        <Route path="content-management" component={ContentManagement} />
+      </Route>
+      <Route path="design" component={Design}>
+        <Route path="prototypes" component={Prototypes} />
+        <Route path="web-graphics" component={WebGraphics} />
+        <Route path="digital-publications" component={DigitalPublications} />
+      </Route>
+      <Route path="data-visualization" component={DataVisualization} />
+      <Route path="web-tech" component={WebTech}>
+        <Route path="podcasts" component={Podcasts} />
+        <Route path="websites" component={Websites} />
+        <Route path="learning" component={Learning} />
+      </Route>
+      <Route path="travel-photos" component={TravelPhotos} />
+      <Route path="fun-photos" component={FunPhotos} />
+      <Route path="about" component={About} />
+      <Route path="resume" component={Resume} />
+      <Route path="social-networking" component={SocialNetworking} />
+      <Route path="blog" component={Blog} />
+      <Route path="four-footed-friends" component={FourFootedFriends} />
+      <Route path="*" component={Page404} />
     </Route>
-    <Route path="design" component={Design}>
-      <Route path="prototypes" component={Prototypes} />
-      <Route path="web-graphics" component={WebGraphics} />
-      <Route path="digital-publications" component={DigitalPublications} />
-    </Route>
-    <Route path="data-visualization" component={DataVisualization} />
-    <Route path="web-tech" component={WebTech}>
-      <Route path="podcasts" component={Podcasts} />
-      <Route path="websites" component={Websites} />
-      <Route path="learning" component={Learning} />
-    </Route>
-    <Route path="travel-photos" component={TravelPhotos} />
-    <Route path="fun-photos" component={FunPhotos} />
-    <Route path="about" component={About} />
-    <Route path="resume" component={Resume} />
-    <Route path="social-networking" component={SocialNetworking} />
-    <Route path="blog" component={Blog} />
-    <Route path="four-footed-friends" component={FourFootedFriends} />
-    <Route path="*" component={Page404} />
-  </Route>
-</Router>,
-document.getElementById('app')
+  </Router>,
+  document.getElementById('app')
 );
