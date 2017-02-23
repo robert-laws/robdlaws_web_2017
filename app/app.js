@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var { Route, Router, IndexRoute, hashHistory } = require('react-router');
+import { Route, Router, IndexRoute, hashHistory, browserHistory } from 'react-router';
+import { createHashHistory } from 'history';
 import './../semantic/dist/semantic.min.css';
 import './styles/ui.scss';
 
@@ -30,7 +31,7 @@ var FourFootedFriends = require('FourFootedFriends');
 var Page404 = require('Page404');
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router history={hashHistory} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={Main}>
       <IndexRoute component={Home} />
       <Route path="development" component={Development}>

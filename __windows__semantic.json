@@ -1,5 +1,5 @@
 {
-  "base": "semantic/",
+  "base": "semantic\\",
   "paths": {
     "source": {
       "config": "src/theme.config",
@@ -8,16 +8,17 @@
       "themes": "src/themes/"
     },
     "output": {
-      "packaged": "dist/",
-      "uncompressed": "dist/components/",
-      "compressed": "dist/components/",
-      "themes": "dist/themes/"
+      "packaged": "dist\\",
+      "uncompressed": "dist\\components\\",
+      "compressed": "dist\\components\\",
+      "themes": "dist\\themes\\"
     },
     "clean": "dist/"
   },
   "permission": 744,
   "autoInstall": false,
   "rtl": false,
+  "version": "2.2.9",
   "components": [
     "reset",
     "site",
@@ -32,6 +33,7 @@
     "label",
     "list",
     "loader",
+    "rail",
     "reveal",
     "segment",
     "step",
@@ -41,11 +43,13 @@
     "menu",
     "message",
     "table",
+    "ad",
     "card",
     "comment",
     "feed",
     "item",
     "statistic",
+    "accordion",
     "checkbox",
     "dimmer",
     "dropdown",
@@ -61,9 +65,9 @@
     "sticky",
     "tab",
     "transition",
+    "api",
     "form",
     "state",
     "visibility"
-  ],
-  "version": "2.2.9"
+  ]
 }
