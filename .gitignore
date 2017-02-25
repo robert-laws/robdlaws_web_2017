@@ -195,7 +195,7 @@ bower_components/
 typings/
 .vscode
 .DS_Store
-public/photos
+# public/photos
 orleans.codegen.cs
 
 
