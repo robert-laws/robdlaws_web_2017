@@ -195,9 +195,13 @@ bower_components/
 typings/
 .vscode
 .DS_Store
-semantic/
 public/photos
 orleans.codegen.cs
+
+
+semantic/src
+semantic/tasks
+semantic/gulpfile.js
 
 # Since there are multiple workflows, uncomment next line to ignore bower_components
 # (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
