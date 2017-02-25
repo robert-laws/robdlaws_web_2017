@@ -1,5 +1,6 @@
 var React = require('react');
 var Image = require('Image');
+var { Loader } = require('semantic-ui-react');
 
 var Gallery = React.createClass({
   getInitialState: function() {
@@ -7,21 +8,22 @@ var Gallery = React.createClass({
       init: true,
       message: '',
       imgCount: 12,
+      scroll_loader: 'loader_inactive',
       items: []
     }
   },
   handleScroll: function(event) {
     var h = document.body.offsetHeight;
     var st = document.body.scrollTop;
-    var sh = document.body.scrollHeight;
+    var sh = document.body.scrollHeight
+    var newST = st;
 
-    if(h + st == sh && this.state.init != true) {
+    if(h + newST >= sh && this.state.init != true) {
       this.setState({
         message: 'bottom',
         imgCount: this.state.imgCount + 12
       });
 
-      debugger;
       var {images} = this.props;
       var count = this.state.imgCount;
       var moreImages = images.map(function(image) {
@@ -31,13 +33,24 @@ var Gallery = React.createClass({
       });
 
       this.setState({
-        items: moreImages
+        scroll_loader: 'loader_active'
       });
+
+      this.delayState(moreImages);
     } else {
       this.setState({
-        message: 'scroll'
+        message: 'scroll',
+        scroll_loader: 'loader_inactive'
       });
     }
+  },
+  delayState: function(imgs) {
+    setTimeout(() => {
+      this.setState({
+        items: imgs,
+        scroll_loader: 'loader_inactive'
+      });
+    }, 2400);
   },
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -64,7 +77,10 @@ var Gallery = React.createClass({
         <div id="columns">
           {this.state.items}
         </div>
-        <div>{this.state.message} {this.state.imgCount}</div>
+        <div>&nbsp;</div>
+        <div className={this.state.scroll_loader}>
+          <Loader active inline='centered' />
+        </div>
       </div>
     )
   }

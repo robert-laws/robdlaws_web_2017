@@ -45,6 +45,15 @@ h4.imageDescription {
   border: 1px solid #EEE;
 }
 
+.loader_inactive {
+  display: none;
+}
+
+.loader_active {
+  display: block;
+}
+
+
 @media screen and (max-width: 750px) {
     #columns {
         column-gap: 0px;
