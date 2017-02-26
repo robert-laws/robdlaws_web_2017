@@ -5,7 +5,7 @@ var { Container, Header, Divider } = require('semantic-ui-react');
 var Gallery = require('Gallery');
 
 var ImageLoader = require('ImageLoader');
-import { images } from './../data/Images.json';
+import { images } from './../data/travel/Images.json';
 
 var TravelPhotos = React.createClass({
   render() {

@@ -55,11 +55,52 @@ I've been lucky enough to travel often during the past 10 years. Living overseas
 
 * Sub-header - Examples
 
-
+TODO - Feb 26
+* Collect images for photo pages
+* Set up JSON file for images
+  * id
+  * url
+  * title
+  * description
+* prep pages for gallery
 
 TODO:
 * get images for websites
 * add metadata for images
-* figure out loading stuff (setTimeout ?)
+* figure out loading stuff (setTimeout ?) --check
 * work on resume
 * review other pages, etc.
+* home page - images
+
+PHOTO Pages:
+* Travel Photos
+* Fun Photos
+* Dog Photos
+---------------
+PHOTOS Todo:
+* Search filter
+
+CONTENT Development:
+* Resume
+* Social Networking
+* Blog
+
+<!--
+Blog entries - sorted by date
+var map = new Map();
+map.set('2-1', "foo");
+map.set('0-1', "bar");
+map.set('3-1', "baz");
+
+var mapAsc = new Map([...map.entries()].sort());
+
+=================================================
+
+var objs = [
+    { first_nom: 'Lazslo', last_nom: 'Jamf'     },
+    { first_nom: 'Pig',    last_nom: 'Bodine'   },
+    { first_nom: 'Pirate', last_nom: 'Prentice' }
+];
+
+objs.sort(function(a,b) {return (a.last_nom > b.last_nom) ? 1 : ((b.last_nom > a.last_nom) ? -1 : 0);} );
+-->

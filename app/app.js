@@ -18,6 +18,7 @@ var WebGraphics = require('WebGraphics');
 var DigitalPublications = require('DigitalPublications');
 var DataVisualization = require('DataVisualization');
 var WebTech = require('WebTech');
+var IDEs = require('IDEs');
 var Podcasts = require('Podcasts');
 var Websites = require('Websites');
 var Learning = require('Learning');
@@ -50,6 +51,7 @@ ReactDOM.render(
         <Route path="websites" component={Websites} />
         <Route path="learning" component={Learning} />
       </Route>
+      <Route path="ides" component={IDEs} />
       <Route path="travel-photos" component={TravelPhotos} />
       <Route path="fun-photos" component={FunPhotos} />
       <Route path="about" component={About} />

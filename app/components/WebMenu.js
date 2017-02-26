@@ -30,15 +30,18 @@ var WebMenu = React.createClass({
                                 <Link className="item" to="/development"><Icon name="code" /> Web Development</Link>
                                 <div className="divider"></div>
                                 <div className="header">Design</div>
-                                <Link className="item" to="/design"><Icon name="paint brush" /> Adobe Design</Link>
-                                <Link className="item" to="/data-visualization"><Icon name="unhide" /> Data Visualization</Link>
+                                <Link className="item" to="/design"><Icon name="paint brush" /> Adobe - Designs</Link>
+                                <div className="divider"></div>
+                                <div className="header">Data</div>
+                                <Link className="item" to="/data-visualization"><Icon name="area chart" /> Data Visualization</Link>
                             </div>
                         </div>
                         <div className="ui simple dropdown item">
                             Web Tech
                             <i className="dropdown icon"></i>
                             <div className="menu">
-                                <Link className="item" to="/web-tech"><Icon name="cubes" /> Web Tech</Link>                                
+                                <Link className="item" to="/web-tech"><Icon name="cubes" /> Web Tech</Link>
+                                <Link className="item" to="/ides"><Icon name="laptop" /> IDEs</Link>
                             </div>
                         </div>
                         <div className="ui simple dropdown item">
@@ -52,6 +55,7 @@ var WebMenu = React.createClass({
                         <div className="ui simple dropdown item">About Me
                             <i className="dropdown icon"></i>
                             <div className="menu">
+                                <div className="header">Professional</div>
                                 <Link className="item" to="/about"><Icon name="user" /> About Me</Link>
                                 <Link className="item" to="/resume"><Icon name="file text outline" /> Resume</Link>
                                 <Link className="item" to="/social-networking"><Icon name="computer" /> Social Networking</Link>

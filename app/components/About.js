@@ -22,9 +22,7 @@ var About = (props) => {
       </Segment>
       <p>I'm excited for the future in web development. Technology advancements press forward and will impact the world of web development for the foreseeable future. Data network speeds continue to increase, allowing for fully streamable media content without the need to download presistent copies. Highly reactive websites improve the user experience and give web developers access to tools that can unleash their creativity and ambitions.</p>
       <p>That brings me to the present moment. I continue to explore the latest technologies and have lead classes or workshops on modern web development processes using task and package managers. Currently, I'm working with the latest technologies - Webpack, React, AngularJS 2, and ASP.NET Core MVC.</p>
-      <Segment inverted secondary color="teal" size="big">
-        <Icon name="privacy" size="big" /> Embrace technology to remain relevant in the 21st Century
-      </Segment>
+      <Message icon='privacy' color='teal' header='Key to Success' content='Embrace technology to be relevant in the 21st Century' />
       <p>Although I've worked in libraries for most of my career, my future path is with full-on web development. As the world changes, I believe it will be essential to have high-level technical skills to keep up. For institutions and professions that aren't willing to embrace the changes, they will find it harder to make themselves relevant in the 21st century.</p>
       <Divider />
       <Header sub>Interests Outside of Web Development</Header>

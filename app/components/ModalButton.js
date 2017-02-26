@@ -9,7 +9,7 @@ var ModalButton = React.createClass({
       <Modal trigger={<Image className="imgForModal" src={img} size='medium' />}>
         <Modal.Header>{imageTitle}</Modal.Header>
         <Modal.Content image>
-          <Image className="imageFile" wrapped centered size='huge' src={img} />
+          <Image className="imageFile" wrapped centered size='massive' src={img} />
         </Modal.Content>
         <Header className="imageDescription" as="h4">Image Description Will Go Here</Header>
       </Modal>
