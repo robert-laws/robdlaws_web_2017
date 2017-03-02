@@ -81,9 +81,9 @@ PHOTOS Todo:
 * Search filter
 
 CONTENT Development:
-* Resume
-* Social Networking
-* Blog
+* Resume ## in progress
+* Social Networking - todo
+* Blog - todo
 
 <!--
 Blog entries - sorted by date
