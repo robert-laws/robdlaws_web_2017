@@ -6,7 +6,7 @@ var ResourceCard = React.createClass({
     var { title, subTitle, desc, link, imgSrc } = this.props;
     return (
       <Card>
-        <Image src={imgSrc} />
+        <Image src={'images/' + imgSrc} />
         <Card.Content>
           <Card.Header>
             <a href={link} target='_blank'>{title}</a>
