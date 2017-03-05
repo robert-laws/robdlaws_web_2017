@@ -1,6 +1,7 @@
 // presentational
 
 var React = require('react');
+<<<<<<< HEAD
 var { Container, Header, Divider } = require('semantic-ui-react');
 var ResourceCards = require('ResourceCards');
 
@@ -17,6 +18,18 @@ var SocialNetworking = React.createClass({
       </Container>
     )
   }
+=======
+var { Container, Header } = require('semantic-ui-react');
+
+var SocialNetworking = React.createClass({
+    render() {
+        return (
+            <Container id="topDiv">
+                <Header as="h1">Social Networking</Header>
+            </Container>
+        )
+    }
+>>>>>>> parent of aef9faa... begin preparing cards - social networking
 });
 
 module.exports = SocialNetworking;
