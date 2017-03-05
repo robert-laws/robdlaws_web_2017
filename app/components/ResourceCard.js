@@ -24,3 +24,5 @@ var ResourceCard = React.createClass({
     )
   }
 });
+
+module.exports = ResourceCard;

@@ -2,7 +2,7 @@ var React = require('react');
 var { Container, Header, Divider } = require('semantic-ui-react');
 var ResourceCards = require('ResourceCards');
 
-import { cards } from './../data/cards/data.json';
+import {cards} from './../data/cards/social.json';
 
 var SocialNetworking = React.createClass({
   render() {

@@ -15,6 +15,14 @@
       "desc": "My code and projects",
       "link": "https://github.com/robert-laws",
       "imgSrc": "github.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Instagram",
+      "subTitle": "robdlaws",
+      "desc": "My code and projects",
+      "link": "https://www.instagram.com/robdlaws/",
+      "imgSrc": "instagram.jpg"
     }
   ]
 }
