@@ -81,9 +81,12 @@ PHOTOS Todo:
 * Search filter
 
 CONTENT Development:
-* Resume
-* Social Networking
+* Resume - basic / content clean-up
+* Social Networking - basic
 * Blog
+
+
+
 
 <!--
 Blog entries - sorted by date
@@ -103,4 +106,160 @@ var objs = [
 ];
 
 objs.sort(function(a,b) {return (a.last_nom > b.last_nom) ? 1 : ((b.last_nom > a.last_nom) ? -1 : 0);} );
+-->
+
+
+<!-- Flowing Images - left to right
+
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+
+}
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+
+	<title>Seamless Responsive Photo Grid</title>
+
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+
+<div id="demo-top-bar">
+
+  <div id="demo-bar-inside">
+
+    <h2 id="demo-bar-badge">
+      <a href="/">CSS-Tricks Example</a>
+    </h2>
+
+    <div id="demo-bar-buttons">
+      <a class='header-button' href='/13372-seamless-responsive-photo-grid/'>&larr; Back to Article</a> &nbsp; <a class='header-button' href='/examples/'>More Demos &rarr;</a>    </div>
+
+  </div>
+
+</div>
+	<section id="photos">
+
+		<img src='http://placekitten.com/300/343' alt=''><img src='http://placekitten.com/300/384' alt=''><img src='http://placekitten.com/300/246' alt=''><img src='http://placekitten.com/300/366' alt=''><img src='http://placekitten.com/300/283' alt=''><img src='http://placekitten.com/300/398' alt=''><img src='http://placekitten.com/300/392' alt=''><img src='http://placekitten.com/300/351' alt=''><img src='http://placekitten.com/300/392' alt=''><img src='http://placekitten.com/300/226' alt=''><img src='http://placekitten.com/300/276' alt=''><img src='http://placekitten.com/300/249' alt=''><img src='http://placekitten.com/300/240' alt=''><img src='http://placekitten.com/300/381' alt=''><img src='http://placekitten.com/300/331' alt=''><img src='http://placekitten.com/300/324' alt=''><img src='http://placekitten.com/300/305' alt=''><img src='http://placekitten.com/300/225' alt=''><img src='http://placekitten.com/300/228' alt=''><img src='http://placekitten.com/300/271' alt=''><img src='http://placekitten.com/300/231' alt=''><img src='http://placekitten.com/300/231' alt=''><img src='http://placekitten.com/300/370' alt=''><img src='http://placekitten.com/300/216' alt=''><img src='http://placekitten.com/300/386' alt=''><img src='http://placekitten.com/300/272' alt=''><img src='http://placekitten.com/300/205' alt=''><img src='http://placekitten.com/300/262' alt=''><img src='http://placekitten.com/300/208' alt=''><img src='http://placekitten.com/300/329' alt=''>
+	</section>
+
+ <style type="text/css" style="display: none !important;">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	#demo-top-bar {
+		text-align: left;
+		background: #222;
+		position: relative;
+		zoom: 1;
+		width: 100% !important;
+		z-index: 6000;
+		padding: 20px 0 20px;
+	}
+	#demo-bar-inside {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+	#demo-bar-buttons {
+		padding-top: 10px;
+		float: right;
+	}
+	#demo-bar-buttons a {
+		font-size: 12px;
+		margin-left: 20px;
+		color: white;
+		margin: 2px 0;
+		text-decoration: none;
+		font: 14px "Lucida Grande", Sans-Serif !important;
+	}
+	#demo-bar-buttons a:hover,
+	#demo-bar-buttons a:focus {
+		text-decoration: underline;
+	}
+	#demo-bar-badge {
+		display: inline-block;
+		width: 302px;
+		padding: 0 !important;
+		margin: 0 !important;
+		background-color: transparent !important;
+	}
+	#demo-bar-badge a {
+		display: block;
+		width: 100%;
+		height: 38px;
+		border-radius: 0;
+		bottom: auto;
+		margin: 0;
+		background: url(/images/examples-logo.png) no-repeat;
+		background-size: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+	}
+	#demo-bar-badge:before, #demo-bar-badge:after {
+		display: none !important;
+	}
+</style>
+</body>
+
 -->
