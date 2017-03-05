@@ -7,10 +7,9 @@ var Image = React.createClass({
     var { title, url } = this.props;
     var urlSource = url;
     return (
-      <figure>
+      <div>
         <ModalButton imageSource={urlSource} imageTitle={title} />
-        <figcaption>{title}</figcaption>
-      </figure>
+      </div>
     )
   }
 });

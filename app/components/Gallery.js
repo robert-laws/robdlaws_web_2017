@@ -9,7 +9,9 @@ var Gallery = React.createClass({
       message: '',
       imgCount: 12,
       scroll_loader: 'loader_inactive',
-      items: []
+      items1: [],
+      items2: [],
+      items3: []
     }
   },
   handleScroll: function(event) {
@@ -26,9 +28,27 @@ var Gallery = React.createClass({
 
       var {images} = this.props;
       var count = this.state.imgCount;
-      var moreImages = images.map(function(image) {
+      var moreImages1 = images.map(function(image) {
         if(image.id <= count) {
-          return <Image key={image.id} title={image.title} url={image.url} />;
+          if(image.id % 3 == 1) {
+            return <Image key={image.id} title={image.title} url={image.url} />;
+          }
+        }
+      });
+
+      var moreImages2 = images.map(function(image) {
+        if(image.id <= count) {
+          if(image.id % 3 == 2) {
+            return <Image key={image.id} title={image.title} url={image.url} />;
+          }
+        }
+      });
+
+      var moreImages3 = images.map(function(image) {
+        if(image.id <= count) {
+          if(image.id % 3 == 0) {
+            return <Image key={image.id} title={image.title} url={image.url} />;
+          }
         }
       });
 
@@ -36,7 +56,7 @@ var Gallery = React.createClass({
         scroll_loader: 'loader_active'
       });
 
-      this.delayState(moreImages);
+      this.delayState(moreImages1, moreImages2, moreImages3);
     } else {
       this.setState({
         message: 'scroll',
@@ -44,10 +64,12 @@ var Gallery = React.createClass({
       });
     }
   },
-  delayState: function(imgs) {
+  delayState: function(imgs1, imgs2, imgs3) {
     setTimeout(() => {
       this.setState({
-        items: imgs,
+        items1: imgs1,
+        items2: imgs2,
+        items3: imgs3,
         scroll_loader: 'loader_inactive'
       });
     }, 2400);
@@ -56,8 +78,21 @@ var Gallery = React.createClass({
     window.addEventListener("scroll", this.handleScroll);
 
     var {images} = this.props;
-    var initImages = images.map(function(image) {
+    var initImages1 = images.map(function(image) {
       if(image.id <= 12) {
+        if(image.id % 3 == 1)
+        return <Image key={image.id} title={image.title} url={image.url} />;
+      }
+    });
+    var initImages2 = images.map(function(image) {
+      if(image.id <= 12) {
+        if(image.id % 3 == 2)
+        return <Image key={image.id} title={image.title} url={image.url} />;
+      }
+    });
+    var initImages3 = images.map(function(image) {
+      if(image.id <= 12) {
+        if(image.id % 3 == 0)
         return <Image key={image.id} title={image.title} url={image.url} />;
       }
     });
@@ -65,7 +100,9 @@ var Gallery = React.createClass({
     this.setState({
       message: 'scroll',
       init: false,
-      items: initImages
+      items1: initImages1,
+      items2: initImages2,
+      items3: initImages3,
     });
   },
   componentWillUnmount() {
@@ -73,9 +110,17 @@ var Gallery = React.createClass({
   },
   render: function() {
     return (
-      <div>
-        <div id="columns">
-          {this.state.items}
+      <div className="ui top aligned three column centered relaxed grid gallery">
+        <div className="row">
+          <div className="column">
+            {this.state.items1}
+          </div>
+          <div className="column">
+            {this.state.items2}
+          </div>
+          <div className="column">
+            {this.state.items3}
+          </div>
         </div>
         <div>&nbsp;</div>
         <div className={this.state.scroll_loader}>

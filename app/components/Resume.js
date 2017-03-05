@@ -50,8 +50,8 @@ var Resume = React.createClass({
                         </Grid.Column>
                         <Grid.Column width={13}>
                           <p className="expSubHeading"><strong>Digital and Media Services Librarian</strong><br/>Georgetown University, School of Foreign Service in Qatar ⋅ Doha, Qatar</p>
-                          <DigitalLiteracyResume />
                           <WebDevelopmentResume />
+                          <DigitalLiteracyResume />
                           <LibraryTechnologySystemsResume />
                           <MultimediaResume />
                           <EducationalTechnologyResume />
