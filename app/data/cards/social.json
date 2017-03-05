@@ -1,0 +1,20 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Twitter",
+      "subTitle": "@robdlaws",
+      "desc": "What's happening with me",
+      "link": "https://twitter.com/robdlaws/",
+      "imgSrc": "twitter.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Github",
+      "subTitle": "robert-laws",
+      "desc": "My code and projects",
+      "link": "https://github.com/robert-laws",
+      "imgSrc": "github.jpg"
+    }
+  ]
+}
