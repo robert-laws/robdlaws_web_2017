@@ -2,7 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 import { Route, Router, IndexRoute, hashHistory, browserHistory } from 'react-router';
 import { createHashHistory } from 'history';
-import './../semantic/dist/semantic.min.css';
+// import './../semantic/dist/semantic.min.css';
 import './styles/ui.scss';
 
 var Main = require('Main');

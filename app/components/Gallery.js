@@ -110,7 +110,7 @@ var Gallery = React.createClass({
   },
   render: function() {
     return (
-      <div className="ui top aligned three column centered relaxed grid gallery">
+      <div className="ui top aligned three column centered relaxed grid gallery stackable">
         <div className="row">
           <div className="column">
             {this.state.items1}

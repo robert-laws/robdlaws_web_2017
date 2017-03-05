@@ -6,7 +6,7 @@ var ModalButton = React.createClass({
     var { imageTitle, imageSource } = this.props;
     var img = '/photos/' + imageSource;
     return (
-      <Modal trigger={<Image className="imgForModal" src={img} fluid bordered shape='rounded' />}>
+      <Modal trigger={<Image className="imgForModal" src={img} fluid bordered shape='rounded' />} closeIcon='close'>
         <Modal.Header>{imageTitle}</Modal.Header>
         <Modal.Content image>
           <Image className="imageFile" wrapped centered size='massive' src={img} />

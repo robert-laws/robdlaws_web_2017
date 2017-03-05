@@ -20,7 +20,7 @@ var ResourceCards = React.createClass({
   },
   render: function() {
     return (
-      <Card.Group>
+      <Card.Group itemsPerRow={6} stackable>
         {this.state.items}
       </Card.Group>
     )

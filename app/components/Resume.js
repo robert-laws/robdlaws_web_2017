@@ -129,6 +129,14 @@ standards for collections</List.Item>
                   <Grid.Column width={5}>
                     <Segment color="blue" basic>
                       <Header as="h2" dividing>
+                        Education
+                      </Header>
+                      <p className="expSubHeading"><strong>MS in Information & Library Science ⋅ 2004</strong><br/>State University of New York at Buffalo ⋅ Buffalo, NY</p>
+                      <p className="expSubHeading"><strong>MA in History ⋅ 2001</strong><br/>George Mason University ⋅ Fairfax, VA</p>
+                      <p className="expSubHeading"><strong>BA in History ⋅ 1998</strong><br/>George Mason University ⋅ Fairfax, VA</p>
+                    </Segment>
+                    <Segment color="blue" basic>
+                      <Header as="h2" dividing>
                         Technology Expertise
                       </Header>
                       <p className="expSubHeading"><strong>Web Development</strong></p>
@@ -176,14 +184,6 @@ standards for collections</List.Item>
                         <List.Item>D3.js</List.Item>
                         <List.Item>Chart.js</List.Item>
                       </List>
-                    </Segment>
-                    <Segment color="blue" basic>
-                      <Header as="h2" dividing>
-                        Education
-                      </Header>
-                      <p className="expSubHeading"><strong>MS in Information & Library Science ⋅ 2004</strong><br/>State University of New York at Buffalo ⋅ Buffalo, NY</p>
-                      <p className="expSubHeading"><strong>MA in History ⋅ 2001</strong><br/>George Mason University ⋅ Fairfax, VA</p>
-                      <p className="expSubHeading"><strong>BA in History ⋅ 1998</strong><br/>George Mason University ⋅ Fairfax, VA</p>
                     </Segment>
                   </Grid.Column>
                 </Grid>
