@@ -14,9 +14,9 @@ var Development = () => {
         <p>The good news is that for those individuals who are willing to learn the skills necessary to become an expert, or at the very least least a highly proficient amateur, their skills are in demand. The job of Web Developer commonly heads the list of hot jobs and is one of the in-demand skills in the 21st century workforce.</p>
         <p>Listed below are top technologies within Front-End, Back-End, and Content Management System development.</p>
         <Divider />
-        <FrontEnd />
-        <BackEnd />
-        <ContentManagement />
+        <FrontEnd perRow={6} />
+        <BackEnd perRow={6} />
+        <ContentManagement perRow={6} />
     </Container>
   )
 }

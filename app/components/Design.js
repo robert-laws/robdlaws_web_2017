@@ -14,9 +14,9 @@ var Design = React.createClass({
                 <p>Although it's possible for the modern web developer to avoid design, I don't recommend it. Even if a web developer isn't an expert in design theory, tools, or application, these are very things to know how to do. I make use of design - particularly focusing on Photoshop, Illustrator, and InDesign - for things like prototyping, graphics for use on the web, and digital publications.</p>
                 <p>Listed below are a portfolio of different design projects - focused on prototyping, web graphics, and digital publishing.</p>
                 <Divider />
-                <Prototypes />
-                <WebGraphics />
-                <DigitalPublications />
+                <Prototypes perRow={6} />
+                <WebGraphics perRow={6} />
+                <DigitalPublications perRow={6} />
             </Container>
         )
     }

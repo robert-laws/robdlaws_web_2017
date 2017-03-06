@@ -13,9 +13,9 @@ var Design = React.createClass({
                 <Header as="h1">Web Tech</Header>
                 <p>Keeping up-to-date with the rapidly moving and always changing landscape of web development requires an awareness of where to find information about what's happening in the development community. There is an abundance of resources available - including websites, podcasts, learning tools, and products.</p>
                 <Divider />
-                <Podcasts />
-                <Websites />
-                <Learning />
+                <Podcasts perRow={6} />
+                <Websites perRow={6} />
+                <Learning perRow={6} />
             </Container>
         )
     }

@@ -11,7 +11,7 @@ var WebGraphics = React.createClass({
       <Container className="subContent">
         <Header as="h3">Web Graphics</Header>
         <p>A selection of some of the web graphics I've designed with Adobe Illustrator.</p>
-        <ResourceCards resourceCards={cards} />
+        <ResourceCards itemsInRow={this.props.perRow} resourceCards={cards} />
       </Container>
     )
   }
