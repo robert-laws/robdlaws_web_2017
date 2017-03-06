@@ -57,6 +57,9 @@ h4.imageDescription {
   display: block;
 }
 
+.ui.massive.image {
+  width: auto !important;
+}
 
 @media screen and (max-width: 750px) {
     #columns {

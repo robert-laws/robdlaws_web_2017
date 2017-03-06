@@ -6,11 +6,11 @@ var ModalButton = require('ModalButton');
 
 var Blog = React.createClass({
     render: function() {
-      var imgSrc = "IMG_1783.jpg";
+      var imgSrc = "IMG-0383.JPG";
       return (
           <Container id="topDiv">
             <Header as="h1">Blog</Header>
-            <ModalButton imageSource={imgSrc} />
+            <ModalButton imageSource={imgSrc} imageTitle="Photo of Nature" />
             <Divider />
           </Container>
       )
