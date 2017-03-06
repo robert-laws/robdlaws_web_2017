@@ -1,0 +1,20 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "WordPress",
+      "subTitle": "CMS",
+      "desc": "Content management for websites and blogs",
+      "link": "https://wordpress.com",
+      "imgSrc": "wordpress.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Drupal",
+      "subTitle": "CMS",
+      "desc": "Scalable, open platform for web content management",
+      "link": "https://www.drupal.org/",
+      "imgSrc": "drupal.jpg"
+    }
+  ]
+}

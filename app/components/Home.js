@@ -18,7 +18,7 @@ var Home = React.createClass({
                                     <Message.Content>
                                         <Message.Header>Global Focus</Message.Header>
                                         <p className="smallerText">-- Living and working overseas for 8+ years has prepared me for out of the ordinary challenges.</p>
-                                    </Message.Content>										
+                                    </Message.Content>
                                 </Message>
                             </div>
                             <div className="six wide right floated column">
@@ -51,12 +51,12 @@ var Home = React.createClass({
                             Front-End Web Development
                         </Header>
                         <p>With a strong focus on usability and attractive design, my work on front-end development doesn't ignore the interests users have in having an eye-pleasing experience online. Attractiveness and usability are essential components to making the web fun. This is all built upon good technical front-end structuring.</p>
-                        <Link className="ui large button" to="/front-end-development"> Front-End Development</Link>
+                        <Link className="ui large button" to="/development"> Development</Link>
                         <Divider hidden />
                         <Divider />
                         <Header as="h3">Photography</Header>
                         <p>For fun, photography is a past-time I enjoy. I've been to many places, mostly in Europe, and taken a lot of photos. Take a look at a sample of what I've been able to capture.</p>
-                        <Link className="ui large button" to="/front-end-development"> Front-End Development</Link>
+                        <Link className="ui large button" to="/travel-photos"> Travel Photos</Link>
                     </Container>
                 </Segment>
             </div>

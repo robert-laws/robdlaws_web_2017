@@ -1,0 +1,20 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "React",
+      "subTitle": "Javascript",
+      "desc": "Javascript library for building user interfaces",
+      "link": "https://facebook.github.io/react/",
+      "imgSrc": "react.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Angular 2",
+      "subTitle": "Javascript",
+      "desc": "Modern web platform delivering app-like experiences",
+      "link": "https://angular.io/",
+      "imgSrc": "angular2.jpg"
+    }
+  ]
+}

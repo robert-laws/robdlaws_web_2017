@@ -5,7 +5,7 @@ var { Icon } = require('semantic-ui-react');
 var WebMenu = React.createClass({
     getDefaultProps() {
         return {
-            img: ['IMG_0540', 'IMG_2359', 'IMG_4845', 'IMG_4896', 'IMG_4925', 'IMG_5845'],
+            img: ['hm_01', 'hm_02', 'hm_03', 'hm_04', 'hm_05', 'hm_06'],
             rand: Math.floor(Math.random() * 6)
         }
     },

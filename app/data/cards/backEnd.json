@@ -1,0 +1,20 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Firebase",
+      "subTitle": "NoSQL",
+      "desc": "Realtime database and backend as a service",
+      "link": "https://firebase.google.com/",
+      "imgSrc": "firebase.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Mongo DB",
+      "subTitle": "NoSQL",
+      "desc": "Open-source, cross-platform, database program",
+      "link": "https://www.mongodb.com",
+      "imgSrc": "mongodb.jpg"
+    }
+  ]
+}

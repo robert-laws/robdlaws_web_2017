@@ -81,9 +81,39 @@ PHOTOS Todo:
 * Search filter
 
 CONTENT Development:
-* Resume - basic / content clean-up
-* Social Networking - basic
+* Home page
+  * fix banner images +
+  * fix links to development, etc. +
+* Web Development
+  * add cards for projects +
+* Prototypes
+  * add cards for projects -
+* Design
+  * add cards for projects +
+* Data Visualization
+  * add cards for projects -
+* Web Tech
+  * re-work text for section -
+  * add cards for sections -
+* IDEs
+  * add cards for products -
+* Travel Photos
+  * add metadata for images -
+* Fun Photos
+  * select photos -
+  * add metadata for images -
+* About Me
+  * review text -
+  * check image clearing -
+* Resume
+  * fix job description text -
+* Social Networking
+  * add cards for networks -
 * Blog
+  * research how to develop -
+* Four-footed Friends
+  * select photos -
+  * add metadata for images -
 
 
 
