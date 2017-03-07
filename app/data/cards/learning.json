@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Lynda.com",
+      "subTitle": "Online Learning",
+      "desc": "Online learning platform",
+      "link": "https://www.lynda.com/",
+      "imgSrc": "lynda.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Pluralsight",
+      "subTitle": "Online Learning",
+      "desc": "On-demand technology learning platform",
+      "link": "https://www.pluralsight.com",
+      "imgSrc": "pluralsight.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Udemy",
+      "subTitle": "Online Learning",
+      "desc": "In-depth online courses",
+      "link": "https://www.udemy.com/",
+      "imgSrc": "udemy.jpg"
+    }
+  ]
+}

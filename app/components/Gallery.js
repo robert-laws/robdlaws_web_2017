@@ -27,11 +27,12 @@ var Gallery = React.createClass({
       });
 
       var {images} = this.props;
+      var {location} = this.props;
       var count = this.state.imgCount;
       var moreImages1 = images.map(function(image) {
         if(image.id <= count) {
           if(image.id % 3 == 1) {
-            return <Image key={image.id} title={image.title} url={image.url} />;
+            return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
           }
         }
       });
@@ -39,7 +40,7 @@ var Gallery = React.createClass({
       var moreImages2 = images.map(function(image) {
         if(image.id <= count) {
           if(image.id % 3 == 2) {
-            return <Image key={image.id} title={image.title} url={image.url} />;
+            return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
           }
         }
       });
@@ -47,7 +48,7 @@ var Gallery = React.createClass({
       var moreImages3 = images.map(function(image) {
         if(image.id <= count) {
           if(image.id % 3 == 0) {
-            return <Image key={image.id} title={image.title} url={image.url} />;
+            return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
           }
         }
       });
@@ -78,22 +79,24 @@ var Gallery = React.createClass({
     window.addEventListener("scroll", this.handleScroll);
 
     var {images} = this.props;
+    var {location} = this.props;
+
     var initImages1 = images.map(function(image) {
       if(image.id <= 12) {
         if(image.id % 3 == 1)
-        return <Image key={image.id} title={image.title} url={image.url} />;
+        return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
       }
     });
     var initImages2 = images.map(function(image) {
       if(image.id <= 12) {
         if(image.id % 3 == 2)
-        return <Image key={image.id} title={image.title} url={image.url} />;
+        return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
       }
     });
     var initImages3 = images.map(function(image) {
       if(image.id <= 12) {
         if(image.id % 3 == 0)
-        return <Image key={image.id} title={image.title} url={image.url} />;
+        return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
       }
     });
 

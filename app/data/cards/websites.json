@@ -1,0 +1,28 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Awwwards",
+      "subTitle": "Website",
+      "desc": "The awards for design, creativity and innovation on the Internet",
+      "link": "https://www.awwwards.com",
+      "imgSrc": "awwwards.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Best Designs",
+      "subTitle": "Website",
+      "desc": "Curation of the best of web design and their designers, featured for design excellence",
+      "link": "https://www.thebestdesigns.com/",
+      "imgSrc": "thebestdesigns.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Smashing Magazine",
+      "subTitle": "Website",
+      "desc": "Blog highlighting developments in design and web development",
+      "link": "https://www.smashingmagazine.com/",
+      "imgSrc": "smashingmag.jpg"
+    }
+  ]
+}

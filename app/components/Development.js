@@ -15,7 +15,9 @@ var Development = () => {
         <p>Listed below are top technologies within Front-End, Back-End, and Content Management System development.</p>
         <Divider />
         <FrontEnd perRow={6} />
+        <Divider />
         <BackEnd perRow={6} />
+        <Divider />
         <ContentManagement perRow={6} />
     </Container>
   )

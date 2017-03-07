@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "The Changelog",
+      "subTitle": "Podcast",
+      "desc": "A weekly podcast that covers the technology and people of open source. ",
+      "link": "https://changelog.com/",
+      "imgSrc": "changelog.jpg"
+    },
+    {
+      "id": 2,
+      "title": "CodingBlocks.NET",
+      "subTitle": "Podcast",
+      "desc": "Podcasts about coding with many programming languages",
+      "link": "https://www.codingblocks.net",
+      "imgSrc": "codingblocks.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Hanselminutes",
+      "subTitle": "Podcast",
+      "desc": "Podcast by Scott Hanselman",
+      "link": "http://hanselminutes.com/",
+      "imgSrc": "hanselminutes.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Javascript Jabber",
+      "subTitle": "Podcast",
+      "desc": "A podcast from Devchat.tv",
+      "link": "https://devchat.tv/js-jabber",
+      "imgSrc": "javascriptJabber.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Big Web Show",
+      "subTitle": "Podcast",
+      "desc": "Covering topics like web publishing, web technology, and more",
+      "link": "http://5by5.tv/bigwebshow",
+      "imgSrc": "bigWebShow.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Programming Throwdown",
+      "subTitle": "Podcast",
+      "desc": "Podcast about developments in programming tech",
+      "link": "http://www.programmingthrowdown.com/",
+      "imgSrc": "programmingThrowdown.jpg"
+    }
+  ]
+}

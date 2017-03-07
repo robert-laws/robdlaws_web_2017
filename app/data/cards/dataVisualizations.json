@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Tableau",
+      "subTitle": "Desktop and Web App",
+      "desc": "Business Intelligence & Analytics",
+      "link": "https://www.tableau.com/",
+      "imgSrc": "tableau.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Excel",
+      "subTitle": "Desktop and Web App",
+      "desc": "Excel analytical and visualization functionality",
+      "link": "https://products.office.com/en-us/excel",
+      "imgSrc": "excel.jpg"
+    },
+    {
+      "id": 3,
+      "title": "D3.js",
+      "subTitle": "Javascript Library",
+      "desc": "Data-driven documents using HTML, SVG, and CSS",
+      "link": "https://d3js.org/",
+      "imgSrc": "d3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Highcharts",
+      "subTitle": "Javascript Library",
+      "desc": "Interactive JavaScript charts for your webpage",
+      "link": "http://www.highcharts.com/",
+      "imgSrc": "highcharts.jpg"
+    }
+  ]
+}

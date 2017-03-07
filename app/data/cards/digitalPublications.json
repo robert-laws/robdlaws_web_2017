@@ -1,0 +1,12 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Dresden",
+      "subTitle": "Jewel of Saxony",
+      "desc": "Short article about touring the city of Dresden",
+      "link": "http://www.robdlaws.com/content/dresdenArticle.pdf",
+      "imgSrc": "dresden.jpg"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Visual Studio 2017",
+      "subTitle": "IDE",
+      "desc": "Fully-featured IDE, productivity for any apps",
+      "link": "https://www.visualstudio.com/",
+      "imgSrc": "visualStudio.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Visual Studio Code",
+      "subTitle": "IDE",
+      "desc": "Free. Open source. Runs everywhere. PC and Mac",
+      "link": "https://code.visualstudio.com/",
+      "imgSrc": "vscode.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Atom",
+      "subTitle": "IDE",
+      "desc": "Text editor that is modern, approachable, yet hackable",
+      "link": "https://atom.io/",
+      "imgSrc": "atom.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Brackets",
+      "subTitle": "IDE",
+      "desc": "A modern, open source text editor",
+      "link": "http://brackets.io/",
+      "imgSrc": "brackets.jpg"
+    }
+  ]
+}

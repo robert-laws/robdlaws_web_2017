@@ -10,7 +10,7 @@ var Blog = React.createClass({
       return (
           <Container id="topDiv">
             <Header as="h1">Blog</Header>
-            <ModalButton imageSource={imgSrc} imageTitle="London Bridge" />
+            <ModalButton imageSource={"travel/" + imgSrc} imageTitle="London Bridge" />
             <Divider />
           </Container>
       )
