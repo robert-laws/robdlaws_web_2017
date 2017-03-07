@@ -11,7 +11,7 @@ module.exports = {
 		path: "public",
 		filename: "bundle.js"
 	},
-	devtool: 'cheap-module-eval-source-map', // makes bundles.js file very large in production
+	// devtool: 'cheap-module-eval-source-map', // makes bundles.js file very large in production
 	devServer: {
 		inline: true,
 		contentBase: './public',

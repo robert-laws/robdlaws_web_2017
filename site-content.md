@@ -87,16 +87,16 @@ CONTENT Development:
 * Web Development
   * add cards for projects +
 * Prototypes
-  * add cards for projects -
+  * add cards for projects +
 * Design
   * add cards for projects +
 * Data Visualization
-  * add cards for projects -
+  * add cards for projects +
 * Web Tech
-  * re-work text for section -
-  * add cards for sections -
+  * re-work text for section +
+  * add cards for sections +
 * IDEs
-  * add cards for products -
+  * add cards for products +
 * Travel Photos
   * add metadata for images -
 * Fun Photos
@@ -104,7 +104,7 @@ CONTENT Development:
   * add metadata for images -
 * About Me
   * review text -
-  * check image clearing -
+  * check image clearing +
 * Resume
   * fix job description text -
 * Social Networking
