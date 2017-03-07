@@ -1,5 +1,4 @@
 // interactive
-
 var React = require('react');
 var { Container, Header, Divider } = require('semantic-ui-react');
 

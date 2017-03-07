@@ -5,7 +5,7 @@ var ResourceCard = require('ResourceCard');
 var ResourceCards = React.createClass({
   getInitialState: function() {
     return {
-      rowItems: 0,
+      rowItems: 1,
       items: []
     }
   },

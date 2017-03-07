@@ -3,7 +3,7 @@ var React = require('react');
 var { Container, Header, Divider } = require('semantic-ui-react');
 
 var Gallery = require('Gallery');
-import { images } from './../data/photos/fun.json';
+import { images } from './../data/photos/travel.json';
 
 var TravelPhotos = React.createClass({
   render() {

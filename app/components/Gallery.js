@@ -32,7 +32,7 @@ var Gallery = React.createClass({
       var moreImages1 = images.map(function(image) {
         if(image.id <= count) {
           if(image.id % 3 == 1) {
-            return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
+            return <Image key={image.id} title={image.title} desc={image.desc} url={location + "/" + image.url} />;
           }
         }
       });
@@ -40,7 +40,7 @@ var Gallery = React.createClass({
       var moreImages2 = images.map(function(image) {
         if(image.id <= count) {
           if(image.id % 3 == 2) {
-            return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
+            return <Image key={image.id} title={image.title} desc={image.desc} url={location + "/" + image.url} />;
           }
         }
       });
@@ -48,7 +48,7 @@ var Gallery = React.createClass({
       var moreImages3 = images.map(function(image) {
         if(image.id <= count) {
           if(image.id % 3 == 0) {
-            return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
+            return <Image key={image.id} title={image.title} desc={image.desc} url={location + "/" + image.url} />;
           }
         }
       });
@@ -84,19 +84,19 @@ var Gallery = React.createClass({
     var initImages1 = images.map(function(image) {
       if(image.id <= 12) {
         if(image.id % 3 == 1)
-        return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
+        return <Image key={image.id} title={image.title} desc={image.desc} url={location + "/" + image.url} />;
       }
     });
     var initImages2 = images.map(function(image) {
       if(image.id <= 12) {
         if(image.id % 3 == 2)
-        return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
+        return <Image key={image.id} title={image.title} desc={image.desc} url={location + "/" + image.url} />;
       }
     });
     var initImages3 = images.map(function(image) {
       if(image.id <= 12) {
         if(image.id % 3 == 0)
-        return <Image key={image.id} title={image.title} url={location + "/" + image.url} />;
+        return <Image key={image.id} title={image.title} desc={image.desc} url={location + "/" + image.url} />;
       }
     });
 

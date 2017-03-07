@@ -98,7 +98,7 @@ CONTENT Development:
 * IDEs
   * add cards for products +
 * Travel Photos
-  * add metadata for images -
+  * add metadata for images +-
 * Fun Photos
   * select photos +
   * add metadata for images -
