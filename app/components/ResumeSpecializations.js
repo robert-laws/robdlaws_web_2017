@@ -7,9 +7,22 @@ var DigitalLiteracyResume = React.createClass({
       <div className="ResumeSpecialization">
         <p className="expTopicHeading topTopic"><u><em>Digital Literacy</em></u></p>
         <List className="expTopicList" bulleted>
-          <List.Item>Taught as a adjunct faculty at University College of London in Qatar for classes on website development</List.Item>
-          <List.Item>Embedded librarian in a political science course over 2 semesters - instructed students on using ArcGIS
-  to create data-enhanced map visualizations</List.Item>
+          <List.Item>Taught students skills to make use of computers to create and optimize digital content including work with Adobe Photoshop and Illustrator</List.Item>
+          <List.Item>Worked with students to recognize and analyze digital content in course and research contexts</List.Item>
+          <List.Item>Taught students on how to meld analog information within a digital medium including enrichment of print and visual materials with metadata descriptions</List.Item>
+        </List>
+      </div>
+    )
+  }
+});
+
+var EducationalTechnologyResume = React.createClass({
+  render: function() {
+    return (
+      <div className="ResumeSpecialization">
+        <p className="expTopicHeading"><u><em>Education Technology</em></u></p>
+        <List className="expTopicList" bulleted>
+          <List.Item>Embedded Library over two semesters in course <em>Water Resources in World Politics</em> focused on the use of ArcGIS to analyze data and create visualizations</List.Item>
           <List.Item>Instructed students how to use Canva, Adobe Illustrator and Acrobat to create digital posters</List.Item>
           <List.Item>Instructed students how to use of OMEKA in several courses</List.Item>
         </List>
@@ -69,23 +82,6 @@ var MultimediaResume = React.createClass({
             </List.List>
           <List.Item>Developed digital learning objects for ArcGIS and database access</List.Item>
           <List.Item>Designed and printed signage for the library with Adobe Illustrator and InDesign</List.Item>
-        </List>
-      </div>
-    )
-  }
-});
-
-var EducationalTechnologyResume = React.createClass({
-  render: function() {
-    return (
-      <div className="ResumeSpecialization">
-        <p className="expTopicHeading"><u><em>Education Technology</em></u></p>
-        <List className="expTopicList" bulleted>
-          <List.Item>Taught as a adjunct faculty at University College of London in Qatar for classes on website development</List.Item>
-          <List.Item>Embedded librarian in a political science course over 2 semesters - instructed students on using ArcGIS
-        to create data-enhanced map visualizations</List.Item>
-          <List.Item>Instructed students how to use Canva, Adobe Illustrator and Acrobat to create digital posters</List.Item>
-          <List.Item>Instructed students how to use of OMEKA in several courses</List.Item>
         </List>
       </div>
     )

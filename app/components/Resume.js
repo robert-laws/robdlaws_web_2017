@@ -44,8 +44,8 @@ var Resume = React.createClass({
                       <Header as="h2" dividing>
                         Professional Experience
                       </Header>
-                      <Grid>
-                        <Grid.Column width={3}>
+                      <Grid stackable>
+                        <Grid.Column width={3} className="resumeDates">
                           <p><em>2008 - present</em></p>
                         </Grid.Column>
                         <Grid.Column width={13}>
@@ -57,8 +57,8 @@ var Resume = React.createClass({
                           <EducationalTechnologyResume />
                         </Grid.Column>
                       </Grid>
-                      <Grid>
-                        <Grid.Column width={3}>
+                      <Grid stackable>
+                        <Grid.Column width={3} className="resumeDates">
                           <p><em>2007 - 2008</em></p>
                         </Grid.Column>
                         <Grid.Column width={13}>
@@ -70,8 +70,8 @@ standards for collections</List.Item>
                           </List>
                         </Grid.Column>
                       </Grid>
-                      <Grid>
-                        <Grid.Column width={3}>
+                      <Grid stackable>
+                        <Grid.Column width={3} className="resumeDates">
                           <p><em>2004 - 2007</em></p>
                         </Grid.Column>
                         <Grid.Column width={13}>
@@ -88,7 +88,7 @@ standards for collections</List.Item>
                       <Header as="h2" dividing>
                         Professional Engagement
                       </Header>
-                      <Grid>
+                      <Grid stackable>
                         <Grid.Column width={3}></Grid.Column>
                         <Grid.Column width={13}>
                           <p className="expSubHeading"><strong>Adjunct Faculty</strong><br/>University College of London in Qatar ⋅ Doha, Qatar</p>
@@ -97,7 +97,7 @@ standards for collections</List.Item>
                           </List>
                         </Grid.Column>
                       </Grid>
-                      <Grid>
+                      <Grid stackable>
                         <Grid.Column width={3}></Grid.Column>
                         <Grid.Column width={13}>
                           <p className="expSubHeading"><strong>Instructor, School of Continuing Education</strong><br/>Georgetown University, School of Foreign Service in Qatar ⋅ Doha, Qatar</p>
@@ -111,7 +111,7 @@ standards for collections</List.Item>
                           </List>
                         </Grid.Column>
                       </Grid>
-                      <Grid>
+                      <Grid stackable>
                         <Grid.Column width={3}></Grid.Column>
                         <Grid.Column width={13}>
                           <p className="expSubHeading"><strong>Conference Presentations</strong></p>

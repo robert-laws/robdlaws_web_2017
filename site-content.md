@@ -106,11 +106,11 @@ CONTENT Development:
   * review text -
   * check image clearing +
 * Resume
-  * fix job description text -
+  * fix job description text +
 * Social Networking
   * add cards for networks -
 * Blog
-  * research how to develop -
+  * research how to develop +
 * Four-footed Friends
   * select photos +
   * add metadata for images +
