@@ -2,102 +2,122 @@
   "images": [
     {
       "id": 1,
-      "title": "accusamus beatae ad facilis cum similique qui sunt",
+      "title": "Ghost",
+      "desc": "Looks like a Pac-Man ghost",
       "url": "IMG-1.JPG"
     },
     {
       "id": 2,
-      "title": "reprehenderit est deserunt velit ipsam",
+      "title": "Pretzel stand",
+      "desc": "Cannstatter Volksfest",
       "url": "IMG-2.JPG"
     },
     {
       "id": 3,
-      "title": "officia porro iure quia iusto qui ipsa ut modi",
+      "title": "Eye of London",
+      "desc": "Ferris Wheel",
       "url": "IMG-3.JPG"
     },
     {
       "id": 4,
-      "title": "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+      "title": "Autumn Market",
+      "desc": "Dresden",
       "url": "IMG-4.JPG"
     },
     {
       "id": 5,
-      "title": "natus nisi omnis corporis facere molestiae rerum in",
+      "title": "Autumn Market",
+      "desc": "Dresden",
       "url": "IMG-5.JPG"
     },
     {
       "id": 6,
-      "title": "accusamus ea aliquid et amet sequi nemo",
+      "title": "Pointing Finger on side of building",
+      "desc": "London",
       "url": "IMG-6.JPG"
     },
     {
       "id": 7,
-      "title": "officia delectus consequatur vero aut veniam explicabo molestias",
+      "title": "Wolves",
+      "desc": "In Dreilinden, near Berlin",
       "url": "IMG-7.JPG"
     },
     {
       "id": 8,
-      "title": "aut porro officiis laborum odit ea laudantium corporis",
+      "title": "Photo of me in mirror",
+      "desc": "London",
       "url": "IMG-8.JPG"
     },
     {
       "id": 9,
-      "title": "qui eius qui autem sed",
+      "title": "Simon's Cat",
+      "desc": "London",
       "url": "IMG-9.JPG"
     },
     {
       "id": 10,
-      "title": "qui eius qui autem sed",
+      "title": "Ghost",
+      "desc": "Another Pac-Man ghost",
       "url": "IMG-10.JPG"
     },
     {
       "id": 11,
-      "title": "qui eius qui autem sed",
+      "title": "Pumpkin Spice Latte",
+      "desc": "Germany",
       "url": "IMG-11.JPG"
     },
     {
       "id": 12,
-      "title": "qui eius qui autem sed",
+      "title": "Modern Family - TV",
+      "desc": "My apartment",
       "url": "IMG-12.JPG"
     },
     {
       "id": 13,
-      "title": "accusamus beatae ad facilis cum similique qui sunt",
+      "title": "Modern version of Town Musicians of Bremen",
+      "desc": "Bremen",
       "url": "IMG-13.JPG"
     },
     {
       "id": 14,
-      "title": "reprehenderit est deserunt velit ipsam",
+      "title": "Legoland",
+      "desc": "Oberhausen",
       "url": "IMG-14.JPG"
     },
     {
       "id": 15,
-      "title": "officia porro iure quia iusto qui ipsa ut modi",
+      "title": "Characters",
+      "desc": "Berlin",
       "url": "IMG-15.JPG"
     },
     {
       "id": 16,
-      "title": "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+      "title": "Art from the Berlin Wall",
+      "desc": "Berlin",
       "url": "IMG-16.JPG"
     },
     {
       "id": 17,
-      "title": "natus nisi omnis corporis facere molestiae rerum in",
+      "title": "Pumpkin character in Starbucks",
+      "desc": "Berlin",
       "url": "IMG-17.JPG"
     },
     {
       "id": 18,
-      "title": "accusamus ea aliquid et amet sequi nemo",
+      "title": "Pumpkins in a grocery store",
+      "desc": "Germany",
       "url": "IMG-18.JPG"
     },
     {
       "id": 19,
-      "title": "aut porro officiis laborum odit ea laudantium corporis",
+      "title": "The program with the mouse",
+      "desc": "Erfurt",
       "url": "IMG-19.JPG"
     },
     {
       "id": 20,
-      "title": "qui eius qui autem sed",
+      "title": "Pretzel sandwich",
+      "desc": "Starbucks, Germany",
       "url": "IMG-20.JPG"
     }
   ]

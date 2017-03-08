@@ -98,10 +98,10 @@ CONTENT Development:
 * IDEs
   * add cards for products +
 * Travel Photos
-  * add metadata for images +-
+  * add metadata for images +
 * Fun Photos
   * select photos +
-  * add metadata for images -
+  * add metadata for images +
 * About Me
   * review text -
   * check image clearing +
@@ -113,7 +113,7 @@ CONTENT Development:
   * research how to develop -
 * Four-footed Friends
   * select photos +
-  * add metadata for images -
+  * add metadata for images +
 
 
 
