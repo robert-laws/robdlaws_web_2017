@@ -50,11 +50,11 @@ h4.imageDescription {
 }
 
 .loader_inactive {
-  display: none;
+  display: none !important;
 }
 
 .loader_active {
-  display: block;
+  display: block !important;
 }
 
 .ui.massive.image {
